@@ -1,0 +1,20 @@
+//name:Qureshi Atif Meraj Alam
+//uin:251P004
+//class:F.E
+//div:c
+#include <stdio.h>
+
+void counter() {
+    static int count = 0; // static variable retains value between function calls
+    count++;
+    printf("Function called %d times\n", count);
+}
+
+int main() {
+    counter();
+    counter();
+    counter();
+    counter();
+
+    return 0;
+}
